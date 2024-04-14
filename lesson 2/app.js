@@ -65,3 +65,89 @@ do {
 //   sum = sum + 1 / i;
 // }
 // console.log(sum);
+// Array - Mảng
+// Object - Đối tượng
+
+// Các thuộc tính và phương thức làm việc với mảng
+// 1. length -> lấy độ dài mảng
+// 2. concat() -> nối các mảng với nhau, không làm thay đổi mảng cũ
+// 3. push(...tham số) -> thêm phần tử vào cuối mảng, có làm thay đổi mảng
+// 4. pop() -> loại bỏ phần tử cuối cùng của mảng, có làm thay đổi mảng
+// 5. shift() -> loại bỏ phần tử đầu tiên của mảng, có làm thay đổi mảng
+// 6. unshift(...tham số) -> thêm phần tử vào đầu mảng, có làm thay đổi mảng
+// 7. join(...tham số) -> tạo chuỗi từ mảng ban đầu, ngăn cách các phần tử bằng các ký tự mình tự định nghĩa
+
+// Cách lặp qua mảng
+
+// const myArr = [1, 2, 3, 4];
+
+// // Cách 1: For loop
+// const myArr2 = [];
+// for (let i = 0; i < myArr.length; i++) {
+//   let el = myArr[i] * myArr[i];
+//   myArr2.push(el);
+// }
+// // console.log(myArr2);
+
+// // Cách 2: forEach()
+// const myArr3 = [];
+// myArr.forEach(function (element) {
+//   myArr3.push(element * element);
+// });
+// // console.log(myArr3);
+
+// // Cách 3: map()
+// const myArr4 = myArr.map(function (e) {
+//   return e * e;
+// });
+// console.log(myArr4);
+
+// let leName = 'Hien Le';
+// let leAge = 16;
+// let leHobby = 'Nghe nhạc';
+// const leInfo = () => {
+//   console.log(`Xin chào, mình là ${leName}. Năm nay mình ${leAge}. Sở thích của mình là ${leHobby}`);
+// };
+// leInfo();
+
+const hienLe = {
+  name: 'Hiền Lê',
+  age: 16,
+  hobby: 'nghe nhạc',
+  isKind: true,
+  introduce: function () {
+    console.log(`Xin chào, mình là ${this.name}`);
+  },
+};
+
+// hienLe.name = 'Đinh Phạm Hiền Lê';
+// hienLe.class = 'JSA02';
+// console.log(hienLe);
+
+// const products = [
+//   {
+//     imgUrl: '.........',
+//     isOffical: true,
+//     productName: 'Laptop 2 in 1',
+//     productPrice: 1000,
+//     productStars: 4.5,
+//   },
+//   {
+//     imgUrl: '.........',
+//     isOffical: false,
+//     productName: 'Casio 2 in 1',
+//     productPrice: 200,
+//     productStars: 4,
+//   },
+//   {
+//     imgUrl: '.........',
+//     isOffical: true,
+//     productName: 'Television',
+//     productPrice: 2000,
+//     productStars: 5,
+//   },
+// ];
+
+// products.forEach(function (e) {
+//   console.log(e.productName);
+// });

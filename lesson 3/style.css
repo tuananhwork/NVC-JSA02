@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+.wrapper {
+  padding: 0 10%;
+}
+
+.product {
+  background-color: rgb(52, 52, 52);
+  color: #fff;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+.product-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.product-price {
+  color: green;
+}
+.product-desc {
+  color: rgb(193, 193, 193);
+}
