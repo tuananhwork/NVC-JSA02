@@ -1,0 +1,18 @@
+.sidebar {
+  width: 30%;
+  padding: 8px;
+  height: calc(100vh - 72px);
+}
+
+.navigator {
+  background-color: var(--bg-main-color);
+  margin-bottom: 8px;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.library {
+  background-color: var(--bg-main-color);
+  padding: 20px;
+  border-radius: 12px;
+}
