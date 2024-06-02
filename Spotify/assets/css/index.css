@@ -1,0 +1,64 @@
+.container {
+  padding-right: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  flex: 1;
+}
+
+.main .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.main .header .account {
+  display: flex;
+  gap: 14px;
+}
+
+.main-container .row {
+  margin-bottom: 28px;
+}
+
+.main-container .row .title {
+  margin-bottom: 16px;
+  padding-left: 8px;
+  font-size: 20px;
+}
+
+.main-container .row-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-container .row-list .row-item {
+  padding: 10px;
+  border-radius: 4px;
+  transition: 0.08s;
+}
+
+.main-container .row-list .row-item:hover {
+  background-color: var(--dark-gray-hover-color);
+}
+
+.main-container .row-list .row-item img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4px;
+}
+
+.main-container .row-list .row-item h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.main-container .row-list .row-item span {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--light-gray-color);
+  text-transform: capitalize;
+}

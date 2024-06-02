@@ -46,9 +46,15 @@ button {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 14px;
+  cursor: pointer;
 }
 
 button:hover {
   transform: scale(1.04);
   background-color: var(--light-color);
+}
+
+.round {
+  border-radius: 50% !important;
+  overflow: hidden;
 }

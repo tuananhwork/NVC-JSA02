@@ -1,5 +1,7 @@
 .sidebar {
-  width: 30%;
+  display: flex;
+  flex-direction: column;
+  width: 26%;
   padding: 8px;
   height: calc(100vh - 72px);
 }
@@ -11,8 +13,34 @@
   border-radius: 12px;
 }
 
+.navigator .logo {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
 .library {
   background-color: var(--bg-main-color);
-  padding: 20px;
+  padding: 8px;
   border-radius: 12px;
+  flex: 1;
+}
+
+.lib-header {
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.lib-content {
+  margin-bottom: 44px;
+  background-color: var(--dark-gray-color);
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.lib-content p {
+  font-size: 14px;
+  padding: 14px 0;
 }
